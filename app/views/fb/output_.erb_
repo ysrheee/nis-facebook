@@ -1,0 +1,3 @@
+<% @output_text.each do |x| %>
+<%= x.content %> <br>
+<% end %>

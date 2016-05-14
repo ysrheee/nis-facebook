@@ -1,0 +1,406 @@
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+$fb_color: rgb(70,92,160);
+$fb_color2: rgb(44,66,136);
+$fb_hover: rgb(38,60,130);
+$fb_gray: rgb(210,210,210);
+
+
+/////////////////////////////////////////////////
+
+body {
+  background-color:rgb(228,229,233);
+}
+
+.body2 {
+  display:inline-block;
+  position:relative;
+  left:50%;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%);/* Chrome, Safari, Opera */
+  -o-transfrom: translateX(-50%);
+  transform:translateX(-50%);
+}
+
+textarea:focus, input:focus, button:focus{
+  outline: 0;
+}
+
+a,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color:white;
+}
+
+//////////////////////////////////////////////////
+
+.fb_nav {
+  background-image: linear-gradient(to bottom,$fb_color,$fb_color2);
+  background-color:$fb_color;
+  border:none;
+  position:fixed;
+  top:0;
+  height:42px;
+  width:100%;
+  // padding-right:250px;
+  z-index:1030;
+}
+
+.fb_nav2 {
+  display:inline-block;
+  position:relative;
+  left:50%;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%);/* Chrome, Safari, Opera */
+  -o-transfrom: translateX(-50%);
+  transform:translateX(-50%);
+}
+
+.nav_left {
+  width:100%;
+  left:-32px;
+  position:relative;
+  display:inline;
+  top:8px;
+}
+
+.search {
+  width:450px;
+  padding-left:7px;
+  border-radius:2px;
+  border:none;
+}
+
+.fb_icon {
+  position:relative;
+  height:20px;
+  top:-1px;
+  margin-right:2px;
+}
+
+.fb_icon2 {
+  position:relative;
+  height:12px;
+  top:-2px;
+}
+
+.nav_right {
+  position:relative;
+  float:right;
+  left:50px;
+  height:42px;
+  font-size:8pt;
+}
+
+.icon_li {
+  display: inline-block;
+  position:relative;
+  height:30px;
+  top:5px;
+  line-height:30px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:3px;
+  border:none;
+}
+
+.icon_li:hover {
+  background-color:$fb_hover;
+}
+
+.profile {
+  height:20px;
+  margin-right:5px;
+}
+
+.fb_home {
+  margin-right:10px;
+  margin-left:10px;
+}
+
+
+//////////////////////////////////////////////////////////////////
+
+
+.fb_post {
+  width:494px;
+  height:151px;
+  // height:230px;
+  position:relative;
+  top:52px;
+  // left:50%;
+  // -ms-transform: translateX(-50%); /* IE 9 */
+  // -webkit-transform: translateX(-50%);/* Chrome, Safari, Opera */
+  // -o-transfrom: translateX(-50%);
+  // transform:translateX(-50%);
+  border: 1px solid $fb_gray;
+  border-radius: 2px;
+  background-color:white;
+}
+
+.box1 {
+  width:470px;
+  height:26px;
+  margin: 10px 12px 0px 12px;
+  padding-bottom:10px;
+  font-size:9pt;
+  font-weight:700;
+  border-bottom: 1px solid $fb_gray;
+}
+
+.fb_icon3 {
+  position:relative;
+  height:16px;
+  top:-2px;
+  margin-right:3px;
+}
+
+.box2 {
+  width:100%;
+  border:none;
+  border-bottom: 1px solid $fb_gray;
+}
+
+.box21 {
+  width:40px;
+  border:1px solid $fb_gray;
+  position:absolute;
+  top:45px;
+  left:12px;
+}
+
+.box22 {
+  width:100%;
+  -webkit-appearance: none;
+  border:none;
+  padding: 10px 12px 12px 64px;
+  resize: none;
+  overflow:visible;
+}
+
+
+.box3 {
+  float:right;
+  width:auto;
+  display: inline-block;
+  padding: 10px 12px 10px 0px;
+}
+
+.box32 {
+  width:55px;
+  height:24px;
+  background-image: linear-gradient(to bottom,$fb_color,$fb_color2);
+  background-color:$fb_color;
+  color:white;
+  border:none;
+  border-radius:3px;
+  font-size:8pt;
+}
+
+
+/////////////////////////////////////////
+
+
+.read_post {
+  margin-top:10px;
+  height:auto;
+}
+
+
+.read_box1 {
+  width:100%;
+  padding: 12px 12px 0px 64px;
+  font-size:10pt;
+  font-weight:700;
+  color:$fb_color;
+}
+
+.read_box11 {
+  top:12px;
+}
+
+.read_box1 span {
+  
+  font-size: 9pt;
+  line-height: 2;
+  color:gray;
+  font-weight: 400;
+}
+
+.read_box {
+  width:470px;
+  margin: 10px 12px 0px 12px;
+  padding-bottom: 12px;
+  border:none;
+  border-bottom: 1px solid $fb_gray;
+}
+
+.read_box2 {
+  padding: 12px;
+}
+
+.read_box2 a {
+  color:gray;
+  font-weight: 600;
+  margin-right:10px;
+}
+
+.read_box2 a:hover {
+  text-decoration : underline;
+}
+
+.read_box3 {
+  background-color:rgb(244,245,246);
+  border:none;
+  border-top: 1px solid $fb_gray;
+}
+
+.read_box31 {
+  width:470px;
+  margin: 10px 12px 0px 12px;
+  padding-bottom: 12px;
+  border:none;
+  // border-bottom: 1px solid $fb_gray;
+  font-size:9pt;
+  color:$fb_color2;
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////
+
+/* MYPAGE_NAV */
+.mypage {
+  position:absolute;
+  top:52px;
+  left:-175px;
+  width:170px;
+  height:auto;
+  font-size:9pt;
+  line-height:15pt;
+}
+
+.mypage div {
+  padding:2px;
+  border:none;
+  border-radius:2px;
+}
+
+.mypage div:hover {
+  background-color:rgb(212,214,221);
+}
+
+#mypg {
+  color:black;
+}
+
+.mypage p {
+  font-size:8pt;
+  font-weight: 500;
+  color:gray;
+  margin-top:8px;
+  margin-bottom:0;
+}
+
+
+
+//////////////////////////////////////////////////////////////////
+
+/* SPONSORED */
+.sponsored {
+  position:absolute;
+  top:52px;
+  left:500px;
+  width:280px;
+  height:auto;
+  border: 1px solid $fb_gray;
+  border-radius: 2px;
+  background-color:white;
+  padding: 10px 12px 10px 12px;
+}
+
+.sponsored a {
+  color:gray;
+  font-weight: 500;
+  font-size:8pt;
+}
+
+.sponsored a:hover {
+  text-decoration : underline;
+}
+
+#nislink img {
+  width:252px;
+  margin: 5px 0px 5px 0px;
+}
+
+#nislink {
+  color:$fb_color;
+  font-weight: 500;
+  font-size:10pt;
+  text-decoration: none;
+}
+
+#nislink span {
+  color:gray;
+  font-weight: 300;
+  font-size: 8pt;
+}
+
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
+@media screen and (max-width:980px) {
+ .nav_right {
+   display:none;
+ }
+ .nav_left {
+   left:0;
+ }
+ .fb_nav2 {
+   left:50%;
+ }
+ 
+}
+
+@media screen and (max-width:768px) {
+  
+}
+
+
+@media screen and (max-width:768px) {
+  
+  .mypage {
+    display:none;
+  }
+  
+  .sponsored {
+    display:none;
+  }
+  
+  body {
+    min-height:100vh;
+  }
+  
+  .search {
+    width:300px;
+  }
+  
+  .fb_post {
+    width: 330px;
+  }
+  
+  .box1 {
+    width: 306px;
+  }
+  
+  .read_box, .read_box31 {
+    width: 306px;
+  }
+  
+}

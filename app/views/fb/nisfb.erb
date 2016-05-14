@@ -1,0 +1,175 @@
+<!-- 해야할것 :
+
+2. 시간(포스트 시간)
+4. 주소에 컨트롤러,view 이름 안뜨게 해주세여
+5. 국정원 외 다른친구 **명이 좋아합니다 여기서 **명이 새로고침할때마다 바뀌는데 상관없나?
+6. 근데 댓글안함? ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ ㅈㅅ,,,,, 계속 볼때마다 생각나네
+
+-->
+
+
+
+<div class="fb_nav">
+  <div class="fb_nav2">
+    <div class="nav_left">
+      <a href="#"><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/icon1.png"></a>
+      <input class="search" type="text" placeholder="궁금한 친구나 장소를 검색해보세요.">
+    </div>
+    
+    <div class="nav_right">
+      <div class="icon_li"><a href="https://facebook-nis.c9users.io"><img class="profile" src="https://facebook-nis.c9users.io/sources/profile.jpg">대한민국 국민</a></div>
+      <div class="icon_li"><a class="fb_home" href="#">홈</a></div class="icon_li">
+      <div class="icon_li"><a href="#"><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/icon2.png"></a></div>
+      <div class="icon_li"><a href="#"><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/icon3.png"></a></div>
+      <div class="icon_li"><a href="#"><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/icon4.png"></a></div>
+      <div class="icon_li"><a href="#"><img class="fb_icon2" src="https://facebook-nis.c9users.io/sources/icon5.png"></a></div>
+      <div class="icon_li"><a href="#"><img class="fb_icon2" src="https://facebook-nis.c9users.io/sources/icon6.png"></a></div>
+    </div>
+  </div>
+</div>
+
+
+<!----------------------------------------------------->
+
+<div class="body2">
+  
+  
+  <div class="mypage">
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/profile.jpg"> 대한민국 국민<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/pencil.png"> 프로필 편집</div></a>
+    
+    <p>즐겨찾기</p>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg1.png"> 뉴스피드<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg2.png"> 메시지<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg3.png"> 이벤트<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg4.png"> 사진</div></a>
+    
+    <p>페이지</p>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg5.png"> 페이지 좋아요<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg6.png"> 페이지 피드<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg7.png"> 페이지 만들기<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg8.png"> 광고만들기</div></a>
+    
+    <p>그룹</p>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg9.png"> 새 그룹<br></div></a>
+    <a id="mypg" href="#"><div><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/mypg10.png"> 그룹 만들기<br></div></a>
+  </div>
+  
+  <!-- write ------------------------------------------------->
+
+  <form class="fb_post" action="/fb/output" method="POST">
+      <div class="box1">
+        <img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/pencil.png"> 상태 업데이트
+      </div>
+      <div class="box2">
+        <img class="box21" src="https://facebook-nis.c9users.io/sources/profile.jpg">
+        <textarea class="box22" type="text" placeholder="무슨 생각을 하고 계신가요?" name="user_message"></textarea> </br>
+        <input id="open_setting" name="open_setting" type="hidden" value="5" />
+      </div>
+      <div class="box3">
+        <input class="box32" type="submit" value="게시">
+      </div>
+      
+      <div class="box3">
+        <select id="demo-htmlselect" name="open_setting">
+          <option value='3' data-imagesrc="https://facebook-nis.c9users.io/sources/open1.png"
+              data-description="Facebook 내외의 모든 사람">전체 공개</option>
+          <option value='2' data-imagesrc="https://facebook-nis.c9users.io/sources/open2.png"
+              data-description="회원님의 Facebook 친구와 국정원">친구(와 국정원)만</option>
+          <option value='1' selected="selected" data-imagesrc="https://facebook-nis.c9users.io/sources/open3.png"
+              data-description="나와 국정원만 보기">나(와 국정원)만 보기</option>
+        </select>
+      </div>
+      
+  </form>
+  
+
+  
+  <!-- timeline ------------------------------------------------->
+  
+  <% @output_text.reverse.each do |x| %>
+    <div class="fb_post read_post">
+      
+      <div class="read_box1">
+        <img class="box21 read_box11" src="https://facebook-nis.c9users.io/sources/profile.jpg">
+        대한민국 국민</br>
+       <span> 서울특별시 종로구.
+       
+        <% if x.openset == '2' %>
+          <img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/open3.png">나만 보기
+        <% end %>
+        <% if x.openset == '1' %>
+          <img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/open2.png">친구만
+        <% end %>
+        <% if x.openset == '0' %>
+          <img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/open1.png">전체 공개
+        <% end %>
+       </span>
+      </div>
+      <div class="read_box">
+        <%= x.content %> <br> <!-- message -->
+      </div>
+      <div class="read_box2">
+        <a href="#"><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/like.png">좋아요</a>
+        <a href="#"><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/comment.png">댓글달기</a>
+        <a href="#"><img class="fb_icon3" src="https://facebook-nis.c9users.io/sources/share.png">공유하기</a>
+      </div>
+      <div class="read_box3">
+        <div class="read_box31">
+          <% if x.openset == '2' %>
+            <div id="asd"><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/like2.png">국정원님이 좋아합니다</div>
+          <% end %>
+          <% if x.openset == '1' %>
+            <div><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/like2.png">국정원님 외 <%=rand(3...42)%>명이 좋아합니다</div>
+          <% end %>
+          <% if x.openset == '0' %>
+            <div><img class="fb_icon" src="https://facebook-nis.c9users.io/sources/like2.png">국정원님 외 <%=rand(10...42)%>명이 좋아합니다</div>
+          <% end %>
+        </div>
+      </div>
+    
+    </div>
+  <% end %>
+
+
+  <!-- sponsored ------------------------------------------------->
+
+  <div class="sponsored">
+    <a href="#">SPONSORED</a>
+    <a id="nislink" href="http://www.nis.go.kr" target="_blank">
+      <img src="https://facebook-nis.c9users.io/sources/nis1.png">
+      nis 국가정보원<br>
+      nis.go.kr<br>
+      <span>국가정보원은 ‘국가안보는 정보로부터 시작된다’는 국가안보의 기본 명제를 실현하는 기관입니다.</span>
+    </a>
+  </div>
+
+
+
+</div> <!--body2-->
+<!--------------------------------------------------->
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<!--<script type="text/javascript" src="jquery.ddslick.js"></script>-->
+<script type="text/javascript" src='/jquery.ddslick.js'></script>
+
+
+<script type="text/javascript">
+  
+  $('#demo-htmlselect').ddslick({
+      onSelected: function(selectedData){
+        selectedIndex = selectedData.selectedIndex;
+        $('#open_setting').attr('value',selectedIndex);
+        
+      }   
+  });
+  
+  
+
+
+</script>
+
+
